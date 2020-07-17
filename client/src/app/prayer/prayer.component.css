@@ -1,0 +1,89 @@
+/*-=================================================================
+                            PRAYER REQ SECTION
+  ==================================================================*/
+
+
+  .prayer-req-section{
+
+	background-image:url(../../assets/img/prayer.jpg);
+	background-origin: content-box;
+	background-position:50% 50%; 
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position:relative;
+	padding:10px;
+	min-height:500px;
+	max-height: 500px;
+
+}
+
+#prayer-cont{
+	margin:auto;
+	padding: 20px;
+	position:absolute;
+	top:4vh;
+	left:5vw;
+   background:#ffffff;
+	min-height:85%;
+	max-height: 95%;
+	box-shadow: 1px 1px 1px 1px #ffffff;
+	z-index: 1;
+}
+
+#prayer-cont h5{
+	text-align: center;
+	font-family: arial;
+	font-weight: bold;
+	color:red;
+	margin-top: 5%;
+
+}
+
+#prayer-cont p{
+	text-align: center;
+}
+
+.prayer-form{
+	width: 95%;
+	height:80%;
+	margin:auto;
+	
+}
+.form-group span{
+	color: red;
+}
+
+.prayer-text{
+	position: absolute;
+	top:50%;
+	transform: translateY(-50%);
+	right: 20%;
+	color:#fff;
+	font-weight: bolder;
+	font-size: 180%;
+	z-index: 1;
+
+}
+
+
+
+#prayer-gradient-cover{
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	width:100%;
+	height:100%;
+	background: linear-gradient(150deg,purple, blue);
+	opacity:.5;
+
+}
+
+.btn-prayer{
+	position: relative;
+	left:50%;
+	transform: translateX(-50%);
+
+}

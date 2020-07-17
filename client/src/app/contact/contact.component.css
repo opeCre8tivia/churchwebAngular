@@ -1,0 +1,51 @@
+.contact-main-cont{
+    width:100%;
+    justify-content: center;
+    min-height: 80vh;
+    background:#ccc;
+    position: relative;
+}
+
+.contact-inner-cont{
+    position: absolute;
+    top:4%;
+    left:50%;
+    transform: translateX(-50%);
+    background:#fff;
+    min-height: 90%;
+}
+
+.other-contact{
+    width:100%;
+    min-height: 150px;
+    height: auto;
+    padding:10px;
+}
+.other-contact ul li{
+    list-style: none;
+    color:gray;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.contact-inner-cont form{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top:155px;
+    width:80%;
+}
+.btn-call{
+    background-image:var(--gradient);
+    color:#fff;
+    font-family: Arial, Helvetica, sans-serif;
+    border:1px solid #fff;
+
+}
+.btn-call:hover{
+    background:transparent;
+    color:lime;
+    font-family: Arial, Helvetica, sans-serif;
+    border:1px solid lime;
+
+}

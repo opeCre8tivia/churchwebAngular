@@ -1,0 +1,86 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~animate.css/animate.min";
+
+
+
+body{
+    margin:0;
+    padding:0;
+}
+
+:root{
+    --myprimary:#0b0054;
+    --mysecondary:#9e005d;
+    --gradient:linear-gradient(45deg, #0b0054, #9e005d)
+}
+
+
+/*-----------------------------------
+
+-----SECTON TITLE -------------
+-----------------------------------*/
+.section-title{
+    color:purple;
+    font-family:Bungee Inline, arial;
+    font-weight: bold;
+    text-align: center;
+    background:#ffffff;
+    padding:20px;
+}
+
+.section-title::after{
+    content:'';
+    background:red;
+    height:2px;
+    width:200px;
+    display:block;
+    margin:auto;
+
+    -webkit-animation: stretch ease-out 2s 2;
+
+
+}
+
+.custom-title{
+    color:tomato;
+    font-weight: bold;
+    font-family: arial, sans-serif;
+    text-align: center;
+    
+}
+
+.top-cont{
+    width: 100%;
+    min-height: 200px;
+    height:200px;
+    background-color: #ccc;
+    display:flex;
+    align-items: center;
+    background:url(../src/assets/img/bg-top.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+.top-cont h5{
+    width:100%;
+    color:#fff;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 300%;
+    background: var(--gradient);
+    background-size: 80%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+    
+@-webkit-keyframes stretch{
+    from{
+        width:0;
+    }
+    to{
+        width:200px;
+    }
+}

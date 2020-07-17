@@ -1,0 +1,19 @@
+.what-we-do{
+    margin:20px;
+    background:#ffffff;
+
+}
+
+.what-we-do a{
+    text-align: center;
+    font-family: sofia,arial;
+    font-weight:bold;
+    color:blue;
+    font-size:90%;
+}
+
+.what-we-do a:hover{
+    text-decoration:underline;
+    text-decoration-style: dotted;
+    color:blue;
+}

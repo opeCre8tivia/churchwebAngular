@@ -1,0 +1,22 @@
+<p> My name is {{nameNow}}  </p>
+<p>Developed in {{parentData}} </p>
+<input type="text" placeholder="Enter name"  #inp (keydown)="onKeyDown(btn,inp)"  />
+<input type="text" placeholder="Enter name"  [(ngModel)]="nameNow" />
+<button (mouseover)="changeName(inp)" #btn  [disabled]="isDisabled"  >Change</button>
+
+<div *ngIf="isSignedIn ; else isNot"> 
+    <p>Your Signed in</p>
+</div>
+<ng-template #isNot>
+    <p>You are not Signed in</p>
+</ng-template>
+<p>
+    {{500 | currency : 'EUR'}}
+</p>
+
+<ul style="width:200px;height:auto ; border:1px solid gray;" *ngFor ="let item of items" >
+<li><div style="width:100%;height: 20px;margin-bottom: 10px;background:#ccc"> {{item.name}} </div></li>
+<li><div style="width:100%;height: 20px;margin-bottom: 10px;background:#ccc"> {{item.weight}} </div></li>
+<li><div style="width:100%;height: 20px;margin-bottom: 10px;background:#ccc"> {{item.price | currency}} </div></li>
+
+</ul>
