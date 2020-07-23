@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'client';
   program = "Angular8"
+
+  onScroll(){
+    console.log("scrolled.....")
+  }
   
 }

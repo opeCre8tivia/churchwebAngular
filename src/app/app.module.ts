@@ -27,6 +27,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { WhatWeDoComponent } from './what-we-do/what-we-do.component';
 import { WhereWeWorkComponent } from './where-we-work/where-we-work.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { ChurchprogramsComponent } from './churchprograms/churchprograms.component';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     AboutUsComponent,
     WhatWeDoComponent,
     WhereWeWorkComponent,
-    GalleryComponent
+    GalleryComponent,
+    ChurchprogramsComponent
   ],
   imports: [
     BrowserModule,
@@ -61,7 +63,7 @@ import { GalleryComponent } from './gallery/gallery.component';
         {path:"about", component:AboutUsComponent},
         {path:"whatwedo", component:WhatWeDoComponent},
         {path:"wherewework", component:WhereWeWorkComponent},
-        {path:"gallery", component:GalleryComponent}
+        {path:"churchprograms", component:ChurchprogramsComponent}
         
       ]
       )
