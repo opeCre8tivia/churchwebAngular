@@ -3,15 +3,25 @@
 
 <div class="container-fluid prayer-req-section">
     <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-10 col-xs-10" class="prayer-text">
+            <h3 >NEED SOME HELP IN PRAYER </h3>
+        </div>
+
         <div class="col-lg-4 col-md-4 col-sm-10 col-xs-10" id="prayer-cont">
             <h5 id="prayer-h5">  </h5>
             <P id="prayer"><strong>Submit Your Prayer Request Below  </strong>
+                {{title}}
              </P>
              
-             <form action="#" class="prayer-form">
+             <form #prayerForm = "ngForm" (ngSubmit)="onSubmit(prayerForm)" class="prayer-form" novalidate>
                  <div class="form-group">
                      <label for="name">Enter name <span>*</span> </label>
-                     <input type="text" placeholder="Enter Your name" minlength="3" name="name" id="name" class="form-control" required>
+                     <input type="text" placeholder="Enter Your name" minlength="3" pattern="[a-zA-Z]" name="name" ngModel #xi = "ngModel" (click)="cecki(xi)" id="name" class="form-control" required>
+                     <div class="alert alert-danger" *ngIf = "xi.touched && !xi.valid">
+                         <div *ngIf="xi.errors.required">Name is required</div>
+                         <div *ngIf="xi.errors.minlength">Name Must be more than three characters</div>
+                         <!-- <div *ngIf="xi.errors.pattern">Not a name</div> -->
+                     </div>
                  </div>
 
                  <div class="form-group">
@@ -28,14 +38,10 @@
              </form>
 
         </div>
-
-        <div class="prayer-text">NEED SOME HELP IN PRAYER </div>
-
-        <div id="prayer-gradient-cover"></div>
-
-        
-
     </div>
+
+    <div id="prayer-gradient-cover"></div>
+    
     
 </div>
 

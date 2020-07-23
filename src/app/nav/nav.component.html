@@ -8,14 +8,28 @@
                 <li routerLink="/">Home</li>
                 <li routerLink="/about">About Us</li>
                 <li routerLink="/whatwedo">What we do</li>
-                <li routerLink="/wherewework">Where we work</li>
+                <li routerLink="/wherewework">Programs</li>
                 <li routerLink="/contact">Contact Us</li>
                 <li routerLink="gallery">Gallery</li>
             </ul>
 
-            <div class="humbager">
+            <div class="humbager" #open (click)="toggle(phoneMenu,close,open)">
                 <span> <i class="fa fa-bars"></i></span>
             </div>
+
+            <div class="humbager" #close style="display: none;" (click)="toggleClose(phoneMenu,open,close)">
+                <span> <i class="fa fa-window-close"></i></span>
+            </div>
+        </div>
+        <div class="phone-menu" #phoneMenu>
+            <ul>
+                <li routerLink="/">Home</li>
+                <li routerLink="/about">About Us</li>
+                <li routerLink="/whatwedo">What we do</li>
+                <li routerLink="/wherewework">Where we work</li>
+                <li routerLink="/contact">Contact Us</li>
+                <li routerLink="gallery">Gallery</li>
+            </ul>
         </div>
        
 

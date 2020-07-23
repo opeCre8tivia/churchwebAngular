@@ -21,6 +21,8 @@ import { ChurchplantComponent } from './churchplant/churchplant.component';
 
 import {LernServiceService} from "./lern-service.service";
 import {ChurchplantService} from "./churchplant.service";
+import {FormsService} from "./forms.service"
+
 import { AboutUsComponent } from './about-us/about-us.component';
 import { WhatWeDoComponent } from './what-we-do/what-we-do.component';
 import { WhereWeWorkComponent } from './where-we-work/where-we-work.component';
@@ -64,7 +66,7 @@ import { GalleryComponent } from './gallery/gallery.component';
       ]
       )
   ],
-  providers: [LernServiceService, ChurchplantService],
+  providers: [LernServiceService, ChurchplantService, FormsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

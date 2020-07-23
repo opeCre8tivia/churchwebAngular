@@ -19,16 +19,17 @@
 }
 
 #prayer-cont{
-	margin:auto;
+	/* margin:auto;
 	padding: 20px;
 	position:absolute;
 	top:4vh;
-	left:5vw;
+	left:5vw; */
    background:#ffffff;
 	min-height:85%;
 	max-height: 95%;
 	box-shadow: 1px 1px 1px 1px #ffffff;
-	z-index: 1;
+	
+	z-index: 2;
 }
 
 #prayer-cont h5{
@@ -55,14 +56,15 @@
 }
 
 .prayer-text{
-	position: absolute;
+	/* position: absolute;
 	top:50%;
 	transform: translateY(-50%);
-	right: 20%;
+	right: 20%; */
 	color:#fff;
 	font-weight: bolder;
 	font-size: 180%;
-	z-index: 1;
+	text-align: center;
+	z-index: 2;
 
 }
 
@@ -78,6 +80,8 @@
 	height:100%;
 	background: linear-gradient(150deg,purple, blue);
 	opacity:.5;
+	z-index: 1;
+	
 
 }
 
