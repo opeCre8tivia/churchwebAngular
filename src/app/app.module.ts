@@ -28,6 +28,12 @@ import { WhatWeDoComponent } from './what-we-do/what-we-do.component';
 import { WhereWeWorkComponent } from './where-we-work/where-we-work.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ChurchprogramsComponent } from './churchprograms/churchprograms.component';
+import { SundayServiceComponent } from './sunday-service/sunday-service.component';
+import { MidWeekServiceComponent } from './mid-week-service/mid-week-service.component';
+import { WomenSundayComponent } from './women-sunday/women-sunday.component';
+import { SundaySchoolComponent } from './sunday-school/sunday-school.component';
+import { YouthMinistryComponent } from './youth-ministry/youth-ministry.component';
+import { EvangelisimComponent } from './evangelisim/evangelisim.component';
 
 
 @NgModule({
@@ -49,7 +55,13 @@ import { ChurchprogramsComponent } from './churchprograms/churchprograms.compone
     WhatWeDoComponent,
     WhereWeWorkComponent,
     GalleryComponent,
-    ChurchprogramsComponent
+    ChurchprogramsComponent,
+    SundayServiceComponent,
+    MidWeekServiceComponent,
+    WomenSundayComponent,
+    SundaySchoolComponent,
+    YouthMinistryComponent,
+    EvangelisimComponent
   ],
   imports: [
     BrowserModule,
@@ -63,7 +75,13 @@ import { ChurchprogramsComponent } from './churchprograms/churchprograms.compone
         {path:"about", component:AboutUsComponent},
         {path:"whatwedo", component:WhatWeDoComponent},
         {path:"wherewework", component:WhereWeWorkComponent},
-        {path:"churchprograms", component:ChurchprogramsComponent}
+        {path:"churchprograms", component:ChurchprogramsComponent},
+        {path:"sundayservice", component:SundayServiceComponent},
+        {path:"midweekservice", component:MidWeekServiceComponent},
+        {path:"sundayschool", component:SundaySchoolComponent},
+        {path:"womensunday", component:WomenSundayComponent},
+        {path:"youthministry", component:YouthMinistryComponent},
+        {path:"evangelisim", component:EvangelisimComponent},
         
       ]
       )

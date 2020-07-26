@@ -1,5 +1,6 @@
 .main-nav-cont{
     position: fixed;
+    top:0;
     width: 100%;
     height: 100px;
     margin-top: 0;
@@ -32,7 +33,9 @@
     top:50%;
     transform: translateY(-50%);
     width: 40%;
-    height: 50px;
+    height: 100px;
+    display: flex;
+    align-items: center;
 }
 .main-menu-cont ul{
     margin: 0;
@@ -42,18 +45,27 @@
     display:flex;
     align-items: center;
     justify-content: space-between;
+    
+    
 
 }
 .main-menu-cont ul li{
     list-style: none;
     display: inline-flex;
+    align-items: center;
     color: #ccc;
     font-family: Arial, Helvetica, sans-serif;
+   
+    height: 100%;
+    font-size: 1rem;
+    outline:none;
+    border:none;
 
 }
 .main-menu-cont ul li:hover{
     text-decoration: underline;
     text-decoration-color: lime;
+   
 }
 
 .main-menu-cont ul li a{
@@ -68,16 +80,34 @@
 
 }
 
+.event-tab span {
+    display:flex;
+    align-items: center;
+}
+.event-tab span i{
+    font-size: 1rem;
+    color:#fff;
+}
+.event-tab span i:hover{
+    text-decoration: none;
+    background:pink;
+    z-index: 1;
+}
+
 .humbager{
     position: absolute;
     right:5px;
-    width:40px;
+    width:60%;
     height:80%;
-    display:none;
-
+    display:block;
     color:#fff;
-    font-size: 35px;
+    display:none;
+    align-items: center;
   
+}
+
+.humbager span i {
+    font-size: 30px;
 }
 
 .phone-menu{
@@ -90,6 +120,7 @@
     background:#fff;
     transition: all 500ms ease-in;
     display: none;
+    
 }
 
 .phone-menu ul{
@@ -101,6 +132,7 @@
     list-style: none;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
+    color:gray;
     height:50px;
     padding: 10px;
     border-bottom: 1px solid #ccc;
@@ -111,6 +143,46 @@
     color:tomato;
 }
 
+.phone-menu ul li a{
+    text-decoration: none;
+    color:gray;
+}
+
+.phone-menu ul li a:hover{
+    text-decoration: none;
+}
+
+/* DROP DOWNS */
+
+.events-menu{
+    width: 250px;
+    min-height: 250px;
+    background-color: #fff;
+    position:absolute;
+    top:100px;
+    right:10%;
+    transition: all 200ms ease-in;
+    display:none;
+}
+.events-menu ul{
+    margin: 0;
+    padding: 0;
+}
+.events-menu ul li{
+    list-style: none;
+    border-bottom: 1px solid gray;
+    padding:5px;
+   
+}
+.events-menu ul li:hover{
+    background:#ccc;
+}
+
+
+
+
+
+
 
 /* Responsive ness */
 
@@ -120,13 +192,14 @@
     }
     .main-menu-cont{
         width:20%;
+        height:100%;
         
     }
     .main-menu-cont ul{
         display:none;
     }
     .humbager{
-        display:inline-flex;
+        display:flex;
     }  
     .logo-cont{
         width:60%;

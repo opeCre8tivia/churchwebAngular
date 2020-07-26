@@ -8,33 +8,43 @@
                 <li routerLink="/">Home</li>
                 <li routerLink="/about">About Us</li>
                 <li routerLink="/whatwedo">What we do</li>
-               <li routerLink="/whatwedo">Church Events</li>
-                <li class="dropdown show" routerLink="/churchprograms">
-                    Projects</li>
+               <li class="event-tab" (mouseover)="onMouseOver(eventMenu)" (mouseleave)="onMouseLeave(eventMenu)" >Church Events <span><i class="material-icons">expand_more</i> </span></li>
+                <li >
+                  <a href="#projects"> Projects</a> </li>
                 <!-- <li routerLink="/contact">Contact Us</li> -->
                 <li ><a href="https://www.flickr.com/photos/communitychurchuganda/" target="_blank"> Gallery</a></li>
             </ul>
              
 
             <div class="humbager" #open (click)="toggle(phoneMenu,close,open)">
-                <span> <i class="fa fa-bars"></i></span>
+                <span> <i class="material-icons">menu</i></span>
             </div>
 
             <div class="humbager" #close style="display: none;" (click)="toggleClose(phoneMenu,open,close)">
-                <span> <i class="fa fa-window-close"></i></span>
+                <span> <i class="material-icons">cancel</i></span>
             </div>
         </div>
-        <div class="phone-menu" #phoneMenu>
+        <div class="phone-menu" #phoneMenu (click)="phoneMenuClick(phoneMenu,open,close)">
             <ul>
                 <li routerLink="/">Home</li>
                 <li routerLink="/about">About Us</li>
                 <li routerLink="/whatwedo">What we do</li>
-                <li routerLink="/wherewework">Where we work</li>
-                <li routerLink="/contact">Contact Us</li>
-                <li routerLink="gallery">Gallery</li>
+                <li style="display: flex;justify-items: space-between;">Church Events <span style="display: flex;align-items: center;"><i style="font-size: 1.5rem;" class="material-icons">expand_more</i> </span></li>
+                <li href="#projects" >projects</li>
+                <li ><a href="https://www.flickr.com/photos/communitychurchuganda/" target="_blank"> Gallery</a></li>
             </ul>
         </div>
-       
+
+        <div class="events-menu" #eventMenu (mouseenter)="onMouseEnter(eventMenu)"  (click)="eventMenuClick(eventMenu)">
+            <ul>
+                <li routerLink="/sundayservice">Sunday Service</li>
+                <li routerLink="/sundayschool">Childrens sunday School</li>
+                <li routerLink="/youthministry">Youth Ministry</li>
+                <li routerLink="/evangelisim">Evangelisim and Outreach</li>
+                <li routerLink="/womensunday">Women's Sunday</li>
+                <li routerLink="/midweekservice">Mid-week Service</li>
+            </ul>
+        </div>
 
     </div>
 </nav>

@@ -19,11 +19,7 @@
 }
 
 #prayer-cont{
-	/* margin:auto;
-	padding: 20px;
-	position:absolute;
-	top:4vh;
-	left:5vw; */
+	
    background:#ffffff;
 	min-height:85%;
 	max-height: 95%;
@@ -56,14 +52,12 @@
 }
 
 .prayer-text{
-	/* position: absolute;
-	top:50%;
-	transform: translateY(-50%);
-	right: 20%; */
+
 	color:#fff;
 	font-weight: bolder;
 	font-size: 180%;
 	text-align: center;
+	margin-left: 20px;
 	z-index: 2;
 
 }
@@ -89,5 +83,6 @@
 	position: relative;
 	left:50%;
 	transform: translateX(-50%);
+	margin-bottom: 5px;
 
 }

@@ -14,7 +14,6 @@ export class NavComponent implements OnInit {
 
   toggle(phoneMenu,close,open){
    phoneMenu.style.left = 0
-   console.log(event.target)
    close.style.display = "block"
    open.style.display = "none"
    
@@ -23,6 +22,29 @@ export class NavComponent implements OnInit {
     phoneMenu.style.left = "-600px"
     open.style.display = 'block'
     close.style.display = "none"
+  
   }
 
+  onMouseOver(eventMenu){
+    eventMenu.style.display = 'block'
+  }
+
+  onMouseLeave(eventMenu){
+    eventMenu.style.display = 'none'
+  }
+
+  onMouseEnter(eventMenu){
+    eventMenu.style.display = "block"
+  }
+  
+  eventMenuClick(eventMenu){
+    eventMenu.style.display = "none"
+  }
+
+  phoneMenuClick(phoneMenu,open,close){
+    phoneMenu.style.left = "-1000px"
+    phoneMenu.style.display = "none"
+    close.style.display = "none"
+    open.style.display = "block"
+  }
 }

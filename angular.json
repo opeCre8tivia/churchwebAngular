@@ -25,18 +25,11 @@
             ],
             "styles": [
               "src/styles.css",
-            
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/animate.css/animate.min.css",
-            
-              
-              "src/assets/lib/font-awesome/css/font-awesome.css"
-              
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+             
             ],
             "scripts": [
               "src/assets/lib/jquery/jquery.min.js"
-
-              
             ]
           },
           "configurations": {
@@ -129,8 +122,17 @@
               "devServerTarget": "client:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/client",
+            "netlifyToken": "a38fe4db6663aee26646ac51db775acea845d9e4d5a6ffe0357445f5f6c0690a",
+            "siteId": "54e0b76e-820b-46fc-ac9e-6e677d66264d"
+          }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "client"
 }
